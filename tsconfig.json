@@ -1,13 +1,14 @@
+
 {
-  "extends": "@tsconfig/node20/tsconfig.json", // Asumiendo que existe una versión para Node 20
   "compilerOptions": {
-    "outDir": "dist",
-    "target": "ES2020",
+    "target": "es6",
     "module": "commonjs",
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "esModuleInterop": true,
+    // Otras configuraciones...
   },
-  "include": [
-    "src"
-  ],
+  "include": ["src/**/*"],
   "exclude": [
     "node_modules"
   ]

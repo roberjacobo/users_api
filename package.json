@@ -2,9 +2,11 @@
   "name": "users_api",
   "version": "1.0.0",
   "description": "This API is designed for user management, integrated with a database for storing user information",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "yarn build && ts-node-dev --respawn src/app.ts",
+    "build": "tsc"
   },
   "repository": "git+https://github.com/roberjacobo/users_api.git",
   "author": "Roberto Jacobo",
@@ -14,10 +16,9 @@
   },
   "homepage": "https://github.com/roberjacobo/users_api#readme",
   "devDependencies": {
-    "@tsconfig/node20": "^20.1.2",
-    "@types/node": "^20.9.0",
-    "nodemon": "^3.0.1",
-    "ts-node": "^10.9.1",
+    "@tsconfig/node16": "^16.1.1",
+    "@types/node": "^20.8.8",
+    "ts-node-dev": "^2.0.0",
     "typescript": "^5.2.2"
   }
 }
